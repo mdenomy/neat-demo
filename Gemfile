@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :test do 
   gem 'rspec-rails'
+  gem 'capybara'
 end
 
 gem 'rails_12factor', group: :production
