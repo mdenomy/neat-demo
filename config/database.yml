@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: neat_demo_development
+  pool: 5
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: neat_demo_test
+  pool: 5
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: neat_demo_production
+  pool: 5
+  password:
