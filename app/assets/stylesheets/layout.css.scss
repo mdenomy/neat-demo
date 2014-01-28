@@ -1,3 +1,4 @@
+$accent: #690005;
 body {
   margin: 0;
   padding: 0;
@@ -5,37 +6,48 @@ body {
   font-size: 14px;
   font-family: $lucida-grande;
   @include outer-container;
+}
 
-  div.header {
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #820544;
-    color: #F7E9B0;
-    border: 1px black solid;
-    span.title {
-      font-size:  32px;
+div.header {
+  @include span-columns(12);
+  @include background(linear-gradient(#eee, #bbb));
+  color: $accent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 3px solid $accent;
+  .title {
+    margin-left: 20px;
+    @include span-columns(8);
+    font-size:  32px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    line-height: 1.5em; 
+    float: left; 
+
+    li {
+      margin-right: 20px;
+      display: inline-block;
     }
   }
 
-  div.container {
-     @include media($mobile) {
-       @include span-columns(6);
-      }
+  a {
+    color: $accent;
+    text-decoration: none;
+  }
+}
 
-    div.sidebar {
-      @include span-columns(3);
-      padding: 5px;
-      @include media($mobile) {
-       @include span-columns(3);
-      }
-    }
+div.container {
+  margin: 20px;
 
-    div.content {
-      @include span-columns(9);
-      padding: 5px;
-      @include media($mobile) {
-       @include span-columns(3);
-      }
-    }
+  div.sidebar {
+    @include span-columns(3);
+    padding: 5px;
+  }
+
+  div.content {
+    @include span-columns(9);
+    padding: 5px;
   }
 }
