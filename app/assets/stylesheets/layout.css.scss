@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  font-size: 14px;
+  font-family: $lucida-grande;
+  @include outer-container;
+
+  div.header {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #820544;
+    color: #F7E9B0;
+    border: 1px black solid;
+    span.title {
+      font-size:  32px;
+    }
+  }
+
+  div.container {
+     @include media($mobile) {
+       @include span-columns(6);
+      }
+
+    div.sidebar {
+      @include span-columns(3);
+      padding: 5px;
+      @include media($mobile) {
+       @include span-columns(3);
+      }
+    }
+
+    div.content {
+      @include span-columns(9);
+      padding: 5px;
+      @include media($mobile) {
+       @include span-columns(3);
+      }
+    }
+  }
+}
