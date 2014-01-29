@@ -5,3 +5,4 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Wine.create(:year => 2007, :producer => "Dingo Hills", :brand => "Wild Dog Shiraz", :price => 19.99)

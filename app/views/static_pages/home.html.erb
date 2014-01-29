@@ -1,6 +1,9 @@
-<div class="sidebar">
-  This is some sidebar stuff
-</div>
 <div class="content">
-  This is the main content
+  <ul>
+    <% @wines.each do |wine| %>
+      <li>
+        <%= "#{wine.year} #{wine.producer} #{wine.brand} #{wine.price}" %>
+      </li>
+    <% end %>
+  </ul>
 </div>

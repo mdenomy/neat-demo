@@ -28,9 +28,14 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'neat'
 
+group :development, :test do
+ gem 'faker'
+end
+
 group :test do 
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'factory_girl_rails'
 end
 
 gem 'rails_12factor', group: :production
