@@ -8,7 +8,7 @@
 selezione = Wine.create(:year => 2007, :producer => "Selezione", :brand => "Trattoria Pomo D'Oro", :price => 19.99,
                         :image => "sangiovese.jpg")
 merryvale = Wine.create(:year => 2010, :producer => "Merryvale", :brand => "Sauvignon Blanc", :price => 14.99,
-                        :image => "sauv-bland.jpg")
+                        :image => "sauv-blanc.jpg")
 mestrezat = Wine.create(:year => 2008, :producer => "Mestrezat-Preller", :brand => "Bordeaux", :price => 34.99,
                         :image => "bordeaux.jpg")
 

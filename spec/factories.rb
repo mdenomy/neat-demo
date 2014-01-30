@@ -6,6 +6,11 @@ FactoryGirl.define do
     year      (1972..2013).to_a.sample
     style     ["Red", "White", "Sparkling"].sample
   end
+
+  factory :review do 
+    notes     Faker::Lorem.sentence
+    reviewer  Faker::Name.name
+  end
   
  end
 

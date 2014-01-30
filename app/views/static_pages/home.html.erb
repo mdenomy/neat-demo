@@ -1,9 +1,15 @@
-<div class="content">
+<div class="full">
+  <h1>Staff Picks</h1>
   <ul>
     <% @reviews.each do |review| %>
       <% wine = review.wine %>
-      <li>
-        <%= "#{wine.year} #{wine.producer} #{wine.brand} #{wine.price}" %>
+      <li class="staff-pick">
+        <span class="year"><%= wine.year %></span>
+        <span class="price"><%= number_to_currency(wine.price, :precision => 2) %></span>
+        <span class="producer"><%= wine.producer %></span>
+        <span class="brand"><%= wine.brand %></span>
+        <div class="label"><%= image_tag(wine.image,  width: "100%") %></div>
+        <span class="notes"><%= review.notes%></span>
       </li>
     <% end %>
   </ul>
