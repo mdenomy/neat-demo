@@ -1,0 +1,44 @@
+.staff-pick {
+  @extend .tile;
+
+  .year {
+    display:    inline;
+    font-size:  24px;
+  }
+
+  .price {
+    display:    inline;
+    font-size:  32px;
+    float:      right;
+    color:      $accent;
+  }
+
+  .producer {
+    font-size:  28px;
+    font-weight: bold;
+    color:      lighten($text, 10%);
+  }
+
+  .brand {
+    font-size:  28px;
+    font-style: italic;
+  }
+
+  .notes {
+    color:      $subtle-text;
+    font-size:  20px;
+  }
+
+  .label {
+    img {
+      margin: 10px 0 10px 0;
+      display: block;
+      height:   250px;
+      width:    auto;
+      max-width: 100%;      
+      max-height: 250px;
+      margin-left:  auto;
+      margin-right: auto;
+    }
+  }
+}

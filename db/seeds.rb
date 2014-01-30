@@ -17,4 +17,4 @@ Review.create(:reviewer => "Nik Dixon", :wine => selezione,
 Review.create(:reviewer => "Bob Marley", :wine => merryvale,
   :notes => "Wonderful grassy nose, with hints of citrus.  Bright taste of green apples.  Great chilled for a picnic on a hot day.")
 Review.create(:reviewer => "Ted Knight", :wine => mestrezat,
-  :notes => "Wow, a truly classic Bordeaux.  Leggy, with tones of deep cherry and chocolate. Pairs great with venision or grilled boar.")
+  :notes => "Wow, a truly classic Bordeaux.  Leggy, with tones of deep cherry and chocolate. Pairs great with venison or grilled boar.")
