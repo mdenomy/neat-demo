@@ -1,6 +1,6 @@
 class StaticPagesController < ApplicationController
 
   def home
-    @wines = Wine.all
+    @reviews = Review.limit(3).order("RANDOM()")
   end
 end

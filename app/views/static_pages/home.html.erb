@@ -1,6 +1,7 @@
 <div class="content">
   <ul>
-    <% @wines.each do |wine| %>
+    <% @reviews.each do |review| %>
+      <% wine = review.wine %>
       <li>
         <%= "#{wine.year} #{wine.producer} #{wine.brand} #{wine.price}" %>
       </li>

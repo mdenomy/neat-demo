@@ -7,6 +7,7 @@ describe Wine do
     it {should respond_to :producer}
     it {should respond_to :brand}
     it {should respond_to :price}
+    it {should respond_to :image}
   end
 
   describe 'associations' do 

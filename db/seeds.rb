@@ -5,4 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Wine.create(:year => 2007, :producer => "Dingo Hills", :brand => "Wild Dog Shiraz", :price => 19.99)
+selezione = Wine.create(:year => 2007, :producer => "Selezione", :brand => "Trattoria Pomo D'Oro", :price => 19.99,
+                        :image => "sangiovese.jpg")
+merryvale = Wine.create(:year => 2010, :producer => "Merryvale", :brand => "Sauvignon Blanc", :price => 14.99,
+                        :image => "sauv-bland.jpg")
+mestrezat = Wine.create(:year => 2008, :producer => "Mestrezat-Preller", :brand => "Bordeaux", :price => 34.99,
+                        :image => "bordeaux.jpg")
+
+Review.create(:reviewer => "Nik Dixon", :wine => selezione,
+  :notes => "Earthy with notes of tobacco and chocolate.  Brick red color with a long finish.  Great now, but could also cellar for 3-5 years.")
+Review.create(:reviewer => "Bob Marley", :wine => merryvale,
+  :notes => "Wonderful grassy nose, with hints of citrus.  Bright taste of green apples.  Great chilled for a picnic on a hot day.")
+Review.create(:reviewer => "Ted Knight", :wine => mestrezat,
+  :notes => "Wow, a truly classic Bordeaux.  Leggy, with tones of deep cherry and chocolate. Pairs great with venision or grilled boar.")
