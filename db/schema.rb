@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140128211141) do
+ActiveRecord::Schema.define(version: 20140130152033) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "reviews", force: true do |t|
+    t.integer  "wine_id"
+    t.text     "notes"
+    t.string   "reviewer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "wines", force: true do |t|
     t.integer  "year"
