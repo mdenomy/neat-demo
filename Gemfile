@@ -26,7 +26,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'neat'
 
 group :development, :test do
- gem 'faker'
+  gem 'faker'
+  gem 'pry-nav'
 end
 
 group :test do 
