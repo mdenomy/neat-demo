@@ -1,16 +1,54 @@
-<div class="full">
-  <h1>Staff Picks</h1>
-  <ul>
-    <% @reviews.each do |review| %>
-      <% wine = review.wine %>
-      <li class="staff-pick">
-        <span class="year"><%= wine.year %></span>
-        <span class="price"><%= number_to_currency(wine.price, :precision => 2) %></span>
-        <span class="producer"><%= wine.producer %></span>
-        <span class="brand"><%= wine.brand %></span>
-        <div class="label"><%= image_tag(wine.image,  width: "100%") %></div>
-        <span class="notes"><%= review.notes%></span>
+<div>
+  <div class="content">
+    <h1>Staff Picks</h1>
+    <ul>
+      <% @reviews.each do |review| %>
+        <% wine = review.wine %>
+        <li class="staff-pick">
+          <span class="year"><%= wine.year %></span>
+          <span class="price"><%= number_to_currency(wine.price, :precision => 2) %></span>
+          <span class="producer"><%= wine.producer %></span>
+          <span class="brand"><%= wine.brand %></span>
+          <div class="label"><%= image_tag(wine.image,  width: "100%") %></div>
+          <span class="notes"><%= review.notes%></span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="sidebar events">
+    <h1>Events</h1>
+    <ul>
+      <li class="event">
+        <span class="date">2/1/2014</span>
+        <span class="title">California Cabs</span>
+        <span class="description">Join us for a tasting of California's best Cabernet Sauvignon.  
+          We'll cover a broad spectrum of styles and price ranges, there will be something for everyone.
+        </span>
       </li>
-    <% end %>
-  </ul>
+       <li class="event">
+        <span class="date">2/8/2014</span>
+        <span class="title">Be My Valentine</span>
+        <span class="description">Valentine's day is just around the corner.  We'll be trying some sparkling
+          wines from around the world for that special day.
+        </span>
+      </li>
+     <li class="event">
+        <span class="date">2/15/2014</span>
+        <span class="title">Not Just Chianti</span>
+        <span class="description">We love Chianti too, but Italy is home to several great styles of wine.
+          Come on in and discover some of the great wine regions of Italy.
+        </span>
+      </li>
+     <li class="event">
+        <span class="date">2/22/2014</span>
+        <span class="title">20 Under $20</span>
+        <span class="description">The staff will pick out their favorite 20 wines all for under $20. 
+          This is a great opportunity to try out some great wines that are as easy on the wallet as they
+          are on your tastebuds.
+        </span>
+      </li>
+    </ul>
+  </div>
 </div>
+
+
