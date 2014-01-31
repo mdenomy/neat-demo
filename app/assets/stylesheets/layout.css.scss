@@ -11,11 +11,13 @@ div.header {
   padding: 5px 0 5px 0;
   line-height: 48px;
   margin-bottom: 20px;
-  border-radius: 4px;
 
   .title {
     margin-left: 20px;
     @include span-columns(8);
+    @include breakpoint($mobile) {
+      @include span-columns(4);
+    }
     font-size:  48px;
   }
 
@@ -25,6 +27,9 @@ div.header {
   }
 
   nav ul {
+    @include breakpoint($mobile) {
+      @include span-columns(4);
+    }
     list-style-type: none;
     font-size: 24px;
     li {
@@ -38,17 +43,23 @@ div.container {
 
   div.sidebar {
     @include span-columns(4);
+    @include breakpoint($mobile) {
+      @include span-columns(4);
+    }
+  
     padding: 5px;
     height: 100%;
     @include background(linear-gradient(darken($accent, 20%), darken($accent, 10%)));
-    border-radius: 4px;
     height: 1065px;
   }
 
   div.content {
     @include span-columns(8);
+    @include breakpoint($mobile) {
+      @include span-columns(4);
+    }
     padding: 5px;
-  }
+   }
 
   div.full {
     @include span-columns(12);

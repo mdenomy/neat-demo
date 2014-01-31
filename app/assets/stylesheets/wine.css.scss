@@ -2,6 +2,10 @@
   @extend .tile;
   @include span-columns(4 of 8);
   @include omega(2n);
+    @include breakpoint($mobile) {
+    @include span-columns(4);
+  }
+
   margin-bottom: 25px;
 
   .year {
