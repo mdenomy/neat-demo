@@ -10,5 +10,5 @@ To set up the application with some sample data, seed the database with the foll
 **rake db:seed** 
 
 ## Responsive Design
-The styling is set up to change the number of columns when displayed on a mobile device (or if the browser gets resized)
-
+The styling is set up to change the number of columns when displayed on a mobile device, a tablet, or if 
+if the browser window gets resized.
