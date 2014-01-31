@@ -70,9 +70,10 @@
     font-size: 32px;
     font-style: italic;
     font-weight: bold;
+    color: darken($background, 10%)
   }
 
   .description {
     font-size: 20px;
-  }
+   }
 }

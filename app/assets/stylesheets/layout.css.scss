@@ -11,15 +11,16 @@ div.header {
   padding: 5px 0 5px 0;
   line-height: 48px;
   margin-bottom: 20px;
+  border-radius: 4px;
 
   .title {
     margin-left: 20px;
     @include span-columns(8);
     font-size:  48px;
- }
+  }
 
   a {
-    color: $background;
+    color: darken($background, 10%);
     text-decoration: none;
   }
 
@@ -39,8 +40,8 @@ div.container {
     @include span-columns(4);
     padding: 5px;
     height: 100%;
-    background: darken($accent, 10%);
-    border-radius: 3px;
+    @include background(linear-gradient(darken($accent, 20%), darken($accent, 10%)));
+    border-radius: 4px;
     height: 1065px;
   }
 
@@ -80,9 +81,9 @@ ul {
 .tile {
   border: 1px solid lighten($border, 25%);
   padding: 5px;
-  -webkit-border-radius:5px;
-  -moz-border-radius:5px;
-  border-radius:5px;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
 
   span {
     display: block;
