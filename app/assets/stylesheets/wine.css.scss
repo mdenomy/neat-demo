@@ -4,6 +4,7 @@
   @include omega(2n);
     @include breakpoint($mobile) {
     @include span-columns(4);
+    @include omega();
   }
 
   margin-bottom: 25px;

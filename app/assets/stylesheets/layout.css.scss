@@ -18,7 +18,7 @@ div.header {
     @include breakpoint($mobile) {
       @include span-columns(4);
     }
-    font-size:  48px;
+    font-size:  42px;
   }
 
   a {
@@ -50,7 +50,6 @@ div.container {
     padding: 5px;
     height: 100%;
     @include background(linear-gradient(darken($accent, 20%), darken($accent, 10%)));
-    height: 1065px;
   }
 
   div.content {
@@ -87,6 +86,10 @@ p {
 
 ul {
   list-style-type: none;
+}
+
+ul.no-indent {
+  padding:  0;
 }
 
 .tile {
