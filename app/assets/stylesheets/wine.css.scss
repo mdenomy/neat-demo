@@ -3,7 +3,7 @@
   @include span-columns(4 of 8);
   @include omega(2n);
   @include breakpoint($tablet) {
-    @include span-columns(3 of 3);
+    @include span-columns(4 of 4);
     @include omega();
   }
   @include breakpoint($mobile) {
