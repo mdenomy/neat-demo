@@ -40,6 +40,7 @@ div.header {
 }
 
 div.container {
+  margin: 10px;
 
   div.sidebar {
     @include span-columns(4);
