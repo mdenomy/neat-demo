@@ -2,11 +2,11 @@
   @extend .tile;
   @include span-columns(4 of 8);
   @include omega(2n);
-  @include breakpoint($tablet) {
+  @include media($tablet) {
     @include span-columns(4 of 4);
     @include omega();
   }
-  @include breakpoint($mobile) {
+  @include media($mobile) {
     @include span-columns(4 of 4);
     @include omega();
   }
